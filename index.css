@@ -1,3 +1,61 @@
+@font-face {
+  font-family: "norwester";
+  src: url('norwester/norwester-v1.2/webfonts/norwester.eot');
+  src: url('norwester/norwester-v1.2/webfonts/norwester.eot') format('embedded-opentype'),
+       url('norwester/norwester-v1.2/webfonts/norwester.woff') format('woff'),
+       url('norwester/norwester-v1.2/webfonts/norwester.tff') format('truetype');
+}
+
 body {
-  background: red;
+    font-family: "norwester";
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+nav {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+}
+
+nav > div {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 2rem;
+}
+
+body > div {
+   display: grid;
+    place-items: center;
+    padding: 2rem 8rem;
+    background-image: linear-gradient(135deg, rgb(233, 13, 202), rgb(21, 54, 241) 75%);
+    background-repeat: none;
+    height: 100vh;
+}
+
+
+body > div:nth-of-type(2) {
+    background: #fff;
+}
+
+
+body > div:nth-of-type(2) p {
+    font-size: 2rem;
+    line-height: 3.5rem;
+    text-align: justify;
+}
+
+
+body > div:nth-of-type(2) h1 {
+    text-align: center;
 }
