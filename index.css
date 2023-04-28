@@ -1,9 +1,9 @@
 @font-face {
   font-family: "norwester";
-  src: url('norwester/norwester-v1.2/webfonts/norwester.eot');
-  src: url('norwester/norwester-v1.2/webfonts/norwester.eot') format('embedded-opentype'),
-       url('norwester/norwester-v1.2/webfonts/norwester.woff') format('woff'),
-       url('norwester/norwester-v1.2/webfonts/norwester.tff') format('truetype');
+  src: url('/assets/webfonts/norwester.eot');
+  src: url('/assets/webfonts/norwester.eot') format('embedded-opentype'),
+       url('/assets/webfonts/norwester.woff') format('woff'),
+       url('/assets/webfonts/norwester.tff') format('truetype');
 }
 
 body {
@@ -34,28 +34,23 @@ nav > div {
     font-size: 2rem;
 }
 
-body > div {
+header {
+    background-image: linear-gradient(135deg, rgb(233, 13, 202), rgb(21, 54, 241) 75%);
+    background-repeat: none;
+		padding: 5rem 2rem;
+}
+
+main > section {
    display: grid;
     place-items: center;
     padding: 2rem 8rem;
     background-image: linear-gradient(135deg, rgb(233, 13, 202), rgb(21, 54, 241) 75%);
     background-repeat: none;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 
-body > div:nth-of-type(2) {
+main > section:nth-child(odd) {
     background: #fff;
 }
 
-
-body > div:nth-of-type(2) p {
-    font-size: 2rem;
-    line-height: 3.5rem;
-    text-align: justify;
-}
-
-
-body > div:nth-of-type(2) h1 {
-    text-align: center;
-}
